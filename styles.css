@@ -371,12 +371,6 @@ footer{
 }
 
 /* For the last paragraph in the section */
-#section2 div > p:last-of-type{
-    background-color: var(--teal-rgba);
-    border: 4px dashed var(--dk-gray);
-    margin: 16px 60px 32px 8px;
-    padding: 32px 8px 16px 60px;
-}
 /* 
     TO DO: add styles to the last paragraph in this section that will:
         - make the background the teal-rgba color
@@ -393,7 +387,10 @@ footer{
             - left: 60px
 */
 #section2 div > p:last-of-type{
-    
+    background-color: var(--teal-rgba);
+    border: 4px dashed var(--dk-gray);
+    margin: 16px 60px 32px 8px;
+    padding: 32px 8px 16px 60px;
 }
 
  /* For the div wrapped around that paragraph to show the space its taking up within its container */
@@ -438,6 +435,11 @@ footer{
         - add the small filter drop shadow from the CSS variables in the root
 */
 #section3 img{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    filter: var(--filter-shadow-sm);
     
 }
 
@@ -480,6 +482,17 @@ footer{
         - move this to the right from its original location by 25px
 */
 #section3 div::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--lt-blue);
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: -50px;
+    left: 25px;
+
 }
 
 
